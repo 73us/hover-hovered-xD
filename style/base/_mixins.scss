@@ -1,0 +1,11 @@
+@mixin text-styles ($s, $w, $lh, $ff){
+    font-size: $s;
+    font-weight: $w;
+    line-height: $lh;
+    font-family: $ff;
+}
+@mixin logo-sizes ($w, $h, $url){
+    width: $w;
+    height: $h;
+    background-image: $url;
+}

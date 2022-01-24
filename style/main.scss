@@ -1,0 +1,187 @@
+@import "./base/reset";
+@import "./base/mixins";
+@import "./base/variables";
+
+// DEFAULT AND MAIN SIZES AND PREFS
+.d-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.transition-prop {
+  transition-duration: 1s;
+  transition-property: width;
+}
+.def-size_and_prop_for_text_boxs {
+  content: "";
+  width: 0;
+  height: 300px;
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  background: {
+    size: 60px;
+    repeat: no-repeat;
+    position: center;
+  }
+}
+body {
+  background-color: coral;
+  .contaner {
+    width: 100%;
+    height: 300px;
+    margin: 10% auto 0;
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: cornflowerblue;
+    .social {
+      width: 100px;
+      height: 100%;
+      overflow: hidden;
+      margin-right: 2px;
+      @extend .transition-prop;
+      &__text-box {
+        width: 500px;
+        height: 300px;
+        background-color: white;
+        position: relative;
+        top: -300px;
+        left: 100px;
+        z-index: 0;
+        display: block;
+        padding: 80px 30px 0 5px;
+      }
+      &__title {
+        margin-bottom: 3%;
+        @include text-styles(50px, 300, 50px, $main-font-family);
+      }
+      &__desc {
+        @include text-styles(20px, normal, 30px, $main-font-family);
+      }
+      &__logo-box {
+        position: relative;
+        width: 100px;
+        height: 100%;
+        @extend .d-flex-center;
+        z-index: 1;
+        background-color: lightskyblue;
+      }
+      // DEFAULT AND MAIN SIZES AND PREFS
+
+      // TWITTER
+      &_tw-logo-box::after {
+        background: {
+          image: $tw-logo;
+          color: turquoise;
+        }
+        @extend .d-flex-center;
+        @extend .transition-prop;
+        @extend .def-size_and_prop_for_text_boxs;
+      }
+      &_tw-logo {
+        @include logo-sizes(50px, 50px, $tw-logo);
+      }
+      // TWITTER
+
+      // FACEBOOK
+      &_fb-logo-box::after {
+        background: {
+          image: $fb-logo;
+          color: darkblue;
+        }
+        @extend .d-flex-center;
+        @extend .transition-prop;
+        @extend .def-size_and_prop_for_text_boxs;
+      }
+      &_fb-logo {
+        @include logo-sizes(50px, 50px, $fb-logo);
+      }
+      // FACEBOOK
+
+      // LINKEDIN
+      &_in-logo-box::after {
+        background: {
+          image: $in-logo;
+          color: royalblue;
+        }
+        @extend .d-flex-center;
+        @extend .transition-prop;
+        @extend .def-size_and_prop_for_text_boxs;
+      }
+      &_in-logo {
+        @include logo-sizes(50px, 50px, $in-logo);
+      }
+      // LINKEDIN
+
+      // INSTAGRAM
+      &_inst-logo-box::after {
+        background: {
+          image: $inst-logo;
+          color: limegreen;
+        }
+        @extend .d-flex-center;
+        @extend .transition-prop;
+        @extend .def-size_and_prop_for_text_boxs;
+      }
+      &_inst-logo {
+        @include logo-sizes(50px, 50px, $inst-logo);
+      }
+      // INSTAGRAM
+
+      // YOUTUBE
+      &_yt-logo-box::after {
+        background: {
+          image: $yt-logo;
+          color: red;
+        }
+        @extend .d-flex-center;
+        @extend .transition-prop;
+        @extend .def-size_and_prop_for_text_boxs;
+      }
+      &_yt-logo {
+        @include logo-sizes(50px, 50px, $yt-logo);
+      }
+      // YOUTUBE
+
+      // TUMBLR
+      &_tmblr-logo-box::after {
+        background: {
+          image: $tmblr-logo;
+          color: indigo;
+        }
+        @extend .d-flex-center;
+        @extend .transition-prop;
+        @extend .def-size_and_prop_for_text_boxs;
+      }
+      &_tmblr-logo {
+        @include logo-sizes(50px, 50px, $tmblr-logo);
+      }
+      // TUMBLR
+
+      // DRIBBBLE
+      &_drib-logo-box::after {
+        background: {
+          image: $drib-logo;
+          color: crimson;
+        }
+        @extend .d-flex-center;
+        @extend .transition-prop;
+        @extend .def-size_and_prop_for_text_boxs;
+      }
+      &_drib-logo {
+        @include logo-sizes(50px, 50px, $drib-logo);
+      }
+      // DRIBBBLE
+    }
+    .social:hover {
+      width: 600px;
+    }
+    .social:hover .social__logo-box::after {
+      width: 100px;
+    }
+    .social:hover .social__text-box {
+      width: 500px;
+    }
+  }
+}

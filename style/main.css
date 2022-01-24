@@ -1,0 +1,323 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.d-flex-center, body .contaner .social__logo-box, body .contaner .social_tw-logo-box::after, body .contaner .social_fb-logo-box::after, body .contaner .social_in-logo-box::after, body .contaner .social_inst-logo-box::after, body .contaner .social_yt-logo-box::after, body .contaner .social_tmblr-logo-box::after, body .contaner .social_drib-logo-box::after {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.transition-prop, body .contaner .social, body .contaner .social_tw-logo-box::after, body .contaner .social_fb-logo-box::after, body .contaner .social_in-logo-box::after, body .contaner .social_inst-logo-box::after, body .contaner .social_yt-logo-box::after, body .contaner .social_tmblr-logo-box::after, body .contaner .social_drib-logo-box::after {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-property: width;
+  transition-property: width;
+}
+
+.def-size_and_prop_for_text_boxs, body .contaner .social_tw-logo-box::after, body .contaner .social_fb-logo-box::after, body .contaner .social_in-logo-box::after, body .contaner .social_inst-logo-box::after, body .contaner .social_yt-logo-box::after, body .contaner .social_tmblr-logo-box::after, body .contaner .social_drib-logo-box::after {
+  content: "";
+  width: 0;
+  height: 300px;
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  background-size: 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body {
+  background-color: coral;
+}
+
+body .contaner {
+  width: 100%;
+  height: 300px;
+  margin: 10% auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  background-color: cornflowerblue;
+}
+
+body .contaner .social {
+  width: 100px;
+  height: 100%;
+  overflow: hidden;
+  margin-right: 2px;
+}
+
+body .contaner .social__text-box {
+  width: 500px;
+  height: 300px;
+  background-color: white;
+  position: relative;
+  top: -300px;
+  left: 100px;
+  z-index: 0;
+  display: block;
+  padding: 80px 30px 0 5px;
+}
+
+body .contaner .social__title {
+  margin-bottom: 3%;
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body .contaner .social__desc {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body .contaner .social__logo-box {
+  position: relative;
+  width: 100px;
+  height: 100%;
+  z-index: 1;
+  background-color: lightskyblue;
+}
+
+body .contaner .social_tw-logo-box::after {
+  background-image: url(../image/twitter.svg);
+  background-color: turquoise;
+}
+
+body .contaner .social_tw-logo {
+  width: 50px;
+  height: 50px;
+  background-image: url(../image/twitter.svg);
+}
+
+body .contaner .social_fb-logo-box::after {
+  background-image: url(../image/facebook.svg);
+  background-color: darkblue;
+}
+
+body .contaner .social_fb-logo {
+  width: 50px;
+  height: 50px;
+  background-image: url(../image/facebook.svg);
+}
+
+body .contaner .social_in-logo-box::after {
+  background-image: url(../image/linkedin.svg);
+  background-color: royalblue;
+}
+
+body .contaner .social_in-logo {
+  width: 50px;
+  height: 50px;
+  background-image: url(../image/linkedin.svg);
+}
+
+body .contaner .social_inst-logo-box::after {
+  background-image: url(../image/instagram.svg);
+  background-color: limegreen;
+}
+
+body .contaner .social_inst-logo {
+  width: 50px;
+  height: 50px;
+  background-image: url(../image/instagram.svg);
+}
+
+body .contaner .social_yt-logo-box::after {
+  background-image: url(../image/youtube.svg);
+  background-color: red;
+}
+
+body .contaner .social_yt-logo {
+  width: 50px;
+  height: 50px;
+  background-image: url(../image/youtube.svg);
+}
+
+body .contaner .social_tmblr-logo-box::after {
+  background-image: url(../image/tumblr.svg);
+  background-color: indigo;
+}
+
+body .contaner .social_tmblr-logo {
+  width: 50px;
+  height: 50px;
+  background-image: url(../image/tumblr.svg);
+}
+
+body .contaner .social_drib-logo-box::after {
+  background-image: url(../image/dribbble.svg);
+  background-color: crimson;
+}
+
+body .contaner .social_drib-logo {
+  width: 50px;
+  height: 50px;
+  background-image: url(../image/dribbble.svg);
+}
+
+body .contaner .social:hover {
+  width: 600px;
+}
+
+body .contaner .social:hover .social__logo-box::after {
+  width: 100px;
+}
+
+body .contaner .social:hover .social__text-box {
+  width: 500px;
+}
+/*# sourceMappingURL=main.css.map */
